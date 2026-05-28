@@ -10,16 +10,16 @@ class Ezforge < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ezforgeai/ezRyder/releases/download/v0.1.0/ezforge_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8903f4c029c5a06dbe6a734449dc81c1efdd68d7fade02fb98250e35548e392a"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.1.0/ezforge_0.1.0_darwin_amd64.tar.gz"
+      sha256 "d08d015dff6ab620f49f2ae5da9f98278fe97141f55aeb596f7fc26c4f493779"
 
       define_method(:install) do
         bin.install "ezforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ezforgeai/ezRyder/releases/download/v0.1.0/ezforge_0.1.0_darwin_arm64.tar.gz"
-      sha256 "eeb8abd11d5660c59b813633befbc55988e2a6d2346bc9bfe212f6ab0dd8123e"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.1.0/ezforge_0.1.0_darwin_arm64.tar.gz"
+      sha256 "2f0fab2ec483818db6ce2799bc9c6c9991bf50ccfc755facb1b0257df3e6b86d"
 
       define_method(:install) do
         bin.install "ezforge"
@@ -29,15 +29,15 @@ class Ezforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezforgeai/ezRyder/releases/download/v0.1.0/ezforge_0.1.0_linux_amd64.tar.gz"
-      sha256 "6bf2c98ff4d9762246edc9fa5ecb85bdd42335c6e5b077a73916d31617843a0f"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.1.0/ezforge_0.1.0_linux_amd64.tar.gz"
+      sha256 "e17b5847b9e8eae3ae541af1ac89d702baae10d6a309667caf23bc4014c9d255"
       define_method(:install) do
         bin.install "ezforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezforgeai/ezRyder/releases/download/v0.1.0/ezforge_0.1.0_linux_arm64.tar.gz"
-      sha256 "d7754a0f416036e928f07a714095587ffabdb42aea57ca998a48739e6d61a2da"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.1.0/ezforge_0.1.0_linux_arm64.tar.gz"
+      sha256 "02f133c107337f5f51d649322e71efee313a2b7b64f69f0ccb58e9c9be5195e0"
       define_method(:install) do
         bin.install "ezforge"
       end
