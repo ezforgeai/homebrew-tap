@@ -5,21 +5,21 @@
 class Ezforge < Formula
   desc "Deploy and manage MCP servers on ezForge Platform"
   homepage "https://ezforge.ai"
-  version "0.2.0"
+  version "0.3.0"
   license "UNLICENSED"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.2.0/ezforge_0.2.0_darwin_amd64.tar.gz"
-      sha256 "844ab1b3a94501bdd82fa35476f3a9f543d754c82b9aeef0f27a02693baa4f07"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.3.0/ezforge_0.3.0_darwin_amd64.tar.gz"
+      sha256 "5ec0db37cda307a3c9a22a188c885f008c8451537fa3756ad18dc417d5cb543b"
 
       define_method(:install) do
         bin.install "ezforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.2.0/ezforge_0.2.0_darwin_arm64.tar.gz"
-      sha256 "fc5a054b80af0e43c291ba0bd23f1962f938fd02d50f94319fa83cf6e90f4e68"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.3.0/ezforge_0.3.0_darwin_arm64.tar.gz"
+      sha256 "8a03d7b28639b81267ede928fc26f73086f40c95e2f02f3f16281539ed38a058"
 
       define_method(:install) do
         bin.install "ezforge"
@@ -29,15 +29,15 @@ class Ezforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.2.0/ezforge_0.2.0_linux_amd64.tar.gz"
-      sha256 "9cea36c606b086a566aa8bb6de181f488883e89073287d62722d7670b65608bc"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.3.0/ezforge_0.3.0_linux_amd64.tar.gz"
+      sha256 "5a3c5dfde63b4311fb7c6d708942047f150d155c4f6e815c55291f6ecb5aa634"
       define_method(:install) do
         bin.install "ezforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.2.0/ezforge_0.2.0_linux_arm64.tar.gz"
-      sha256 "20888fd6353c4a1e31eba64faebbc03174cd6dba05a1220a1d559ea9571c66ad"
+      url "https://github.com/ezforgeai/ezforge-cli/releases/download/v0.3.0/ezforge_0.3.0_linux_arm64.tar.gz"
+      sha256 "81fb1b84628343f9e78dd87084156ca1436b05789a720a0401f35bca674a7557"
       define_method(:install) do
         bin.install "ezforge"
       end
